@@ -1,6 +1,7 @@
 <%= simple_form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post, class: "form-signin" }) do |f| %>
+  <h2 class="text-center">Forgot my Password</h2>
   <%= f.error_notification %>
-<h2 class="text-center">Forgot my Password</h2>
+
 
     <%= f.input :email, required: true, autofocus: true, label: false, placeholder: "Email", input_html: {class: "form-control"} %>
  
