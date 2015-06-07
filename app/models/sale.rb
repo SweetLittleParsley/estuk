@@ -5,7 +5,7 @@ class Sale < ActiveRecord::Base
 	private 
 
 	def populate_guid
-		self.guid = SecureRandom.unid()
+		self.guid = SecureRandom.uuid()
 	end
 
 end
